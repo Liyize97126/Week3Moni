@@ -40,6 +40,7 @@ public class SearchHistoryView extends FrameLayout {
     @Override
     protected void onLayout(boolean changed, int left, int top, int right, int bottom) {
         super.onLayout(changed, left, top, right, bottom);
+        //定义基础变量
         int sumWidth = 0;
         int width = getWidth();
         int lines = 0;
@@ -57,7 +58,7 @@ public class SearchHistoryView extends FrameLayout {
         }
     }
     //添加历史
-    public void addHistory(final String text){
+    public void addHistory(String text){
         //获得控件
         TextView textView = (TextView) View.inflate(getContext(), R.layout.history_item, null);
         textView.setText(text);
